@@ -154,7 +154,23 @@ d3.json("imagery.geojson", function(error, imagery) {
         .classed('meta', true);
 
     meta.append('span')
-        .text(function(d) {
-            return 'url: ' + d.properties.url;
+        .html(function(d) {
+            var data = "";
+            if (d.properties.type === 'tms') {
+                data = '<a target="_map_compare" href="' + 
+                        'https://mc.bbbike.org/mc/?num=2&eo-osmlab-match-id=.&mt0=e-osmlab-' + 
+                        d.properties.id + '">map compare</a>';
+            }
+            
+            else if (d.properties.type === 'wms') {
+                if (d.properties.url.indexOf('REQUEST') >= 0 ) {
+                   data = '<a target="_map_compare" href="' + 
+                        'https://mc.bbbike.org/mc/?num=2&eo-osmlab-match-id=.&mt0=e-osmlab-' + 
+                        d.properties.id + '">map compare</a>';
+                }
+            }
+            data += " " + 'url: ' + d.properties.url;
+            
+            return data;
         });
 });
