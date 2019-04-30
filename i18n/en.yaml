@@ -35,6 +35,11 @@ en:
         text: Terms & Feedback
       description: Imagery boundaries and capture dates. Labels appear at zoom level 13 and higher.
       name: DigitalGlobe Standard Imagery Vintage
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2018 cloudless
     EsriWorldImagery:
       attribution:
         text: Terms & Feedback
@@ -169,6 +174,11 @@ en:
         text: GSI Japan
       description: Japan GSI airphoto Imagery. Not fully orthorectified, but a bit newer and/or differently covered than GSI ortho Imagery.
       name: Japan GSI airphoto Imagery
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japan seamless photo
+      description: Japan GSI seamlessphoto Imagery. The collection of latest imageries of GSI ortho, airphoto, post disaster and others.
+      name: Japan GSI seamlessphoto Imagery
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan

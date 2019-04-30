@@ -1,4 +1,29 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "required": false,
+            "text": "DTM Relief 2014 - Auflösung 50cm, WMS Solothurn (SOGIS)"
+        },
+        "available_projections": [
+            "EPSG:21781",
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:3035",
+            "EPSG:32632",
+            "EPSG:2056"
+        ],
+        "country_code": "CH",
+        "id": "Solothurn-sogis2014-dtm-wms",
+        "license_url": "https://wiki.openstreetmap.org/wiki/SOGIS_WMS",
+        "name": "Kanton Solothurn, DTM Relief 2014 50cm",
+        "start_date": "2014",
+        "end_date": "2014",
+        "min_zoom": 8,
+        "type": "wms",
+        "url": "https://geoweb.so.ch/wms/wms_lidar?LAYERS=dtm_relief2014_50cm&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "privacy_policy_url": "https://www.so.ch/rechtliches/"
+    },
     "geometry": {
         "coordinates": [
             [
@@ -653,26 +678,5 @@
             ]
         ],
         "type": "Polygon"
-    },
-    "properties": {
-        "attribution": {
-            "required": false,
-            "text": "Orthofoto WMS Solothurn"
-        },
-        "best": true,
-        "country_code": "CH",
-        "end_date": "2017",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/ch/KantonSolothurn-SOGIS-wms.png",
-        "id": "Solothurn-sogis2014-tms",
-        "license_url": "https://wiki.openstreetmap.org/wiki/SOGIS_WMS",
-        "description": "This imagery is provided via a proxy operated by https://sosm.ch/", 
-        "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
-        "max_zoom": 19,
-        "min_zoom": 15,
-        "name": "Kanton Solothurn (SOGIS)",
-        "start_date": "2015",
-        "type": "tms",
-        "url": "https://mapproxy.osm.ch/tiles/sogis2014/EPSG900913/{zoom}/{x}/{y}.png?origin=nw"
-    },
-    "type": "Feature"
+    }
 }
